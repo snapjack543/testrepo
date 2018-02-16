@@ -13,14 +13,13 @@ from django.views.static import serve
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^polls/', include('polls.urls', namespace='polls')),
-    url(r'^sitemap\.xml$', sitemap,
-        {'sitemaps': {'cmspages': CMSSitemap}}),
-
+    url(r'^sitemap\.xml$', sitemap,{'sitemaps': {'cmspages': CMSSitemap}}),
 ]
 
 urlpatterns += i18n_patterns(
     url(r'^admin/', include(admin.site.urls)),  # NOQA
+    url(r'^polls/', include('polls.urls', namespace='polls')),
+    url(r'^booking/', include('booking.urls', namespace='booking')),
     url(r'^', include('cms.urls')),
 )
 

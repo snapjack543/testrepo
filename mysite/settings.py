@@ -141,7 +141,8 @@ INSTALLED_APPS = (
     'mysite',
     'polls',
     'booking',
-    'djreservation'
+    'djreservation',
+    'polls_cms_integration'
 )
 
 LANGUAGES = (

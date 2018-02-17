@@ -139,10 +139,7 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'mysite',
-    'polls',
-    'booking',
-    'djreservation',
-    'polls_cms_integration'
+    'reservations'
 )
 
 LANGUAGES = (
